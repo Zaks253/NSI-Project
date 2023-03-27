@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+*{
+	scroll-behavior: smooth;
+}
+:root {
+	--violet: #d33bfd;
+}
+
+
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	padding-top: 0%;
+}
+
+header { /* faire un dégradé de couleur */
+	background: linear-gradient(#9fb9d2, #282c6e, #661255);
+}
+
+header nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav .left { /* pour mettre NSI à gauche */
+	position: relative;
+	margin-left: 36;
+	color: rgb(145, 40, 40);
+}
+
+header nav .right { /* pour aligner accueil ect à gauche  */
+	display: flex;
+	align-items: center;
+}
+header nav .right p {
+	margin: 15;
+	color: #ccc;
+}
+header nav .right p:hover {
+	color: white;
+	cursor: pointer;
+}
+header nav .right button { /* pour button dons */
+	padding: 5px 15px;
+	font-size: 16px;
+	background-color: inherit;
+	border: 1px solid var(--violet);
+	border-radius: 5px;
+	color: var(--violet);
+	cursor: pointer;
+	transition: color 0.5s, background-color 0.5s;
+}
+header nav .right button:hover {
+	color: var(--blue);
+	background-color: var(--violet);
+	
+}
+
+
+.presentation {
+	padding: 30px 5%;
+	margin-top: 5%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.presentation .product-presentation {
+	width: 100%;
+	flex-shrink: 3;
+}
+.presentation .product-presentation h1 {
+	margin: 0;
+	font-size: 4vw;
+	width: 80%;
+}
+.presentation .product-presentation h2 {
+	margin: 0;
+	font-size: 40;
+	width: 80%;
+	color: red
+}
+
+.presentation .product-presentation h2.utile {
+	margin: 0;
+	font-size: 21px;
+	width: 100%;
+	color: white
+}
+.presentation .product-presentation p {
+	font-weight: 300;
+	color: #e9e9e9;
+}
+.presentation .product-presentation button {
+	margin-top: 20px;
+	padding: 15px 20px;
+	font-size: 15px;
+	border-radius: 10px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+
+.first .product-presentation button { /* mettre la couleur du boutton */
+	background-color: var(--violet);
+	color: blue;
+	border: 1px solid var(--violet);
+	transition: background-color 0.5s, color 0.5s;
+
+}
+.first .product-presentation button:hover {  /* quand je passe sur le boutton */
+	background-color: black;
+	color: var(--violet);
+}
+.first .product-presentation .small-images {
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.first .product-presentation .small-images .small { /* la socle des petites images */
+	padding: 20px;
+	background-color: #33314d;
+	margin: 0 15px 15px 0;
+	border-radius: 20px;
+	transition: filter 0.5s;
+}
+.first .product-presentation .small-images .small:hover {
+	filter: brightness(50%);
+}
+.first .product-presentation .small-images .small img {
+	width: 120px;
+}
+
+.second {
+	margin: 0;
+	background-color: #13181d;
+}
+.second .product-presentation .new {
+	color: var(--violet);
+	font-size: 30px
+}
+.second .product-presentation button {
+	background-color: inherit;
+	border: 1px solid var(--violet);
+	color: var(--violet);
+	transition: background-color 0.5s, color 0.5s;
+}
+
+.container{ /* pour aligner les images  */
+	justify-content:space-between;
+	display: flex;
+	margin: 1em;
+}
+
+.second .product-presentation .container .prix1{ /* Pour que les prix soient bien allignées avec les immages */
+	margin-left: 50;
+}
+
+.second .product-presentation .container .prix2{
+	margin-left: 40;
+}
+
+.second .product-presentation .container .prix3{
+	margin-left: 60;
+}
+.second .product-presentation button:hover {
+	background-color: var(--violet);
+	color: white;
+}
+
+
+.maide{ /* Distance entre les titres du bas */
+	margin-left: 43%;
+}
+
+.mcontact{
+	margin-left: 30%;
+}
+
+.mformation{
+	margin-left: 17%;
+}
+
+.mréseaux{
+	margin-left: 19%;
+}
+
+nav.column { /*  Pour que le bas soit allignés */
+	margin: 0;
+	padding: 70px;
+	font-size: 15px;
+	background-color: black;
+	display: inline-table;
+	flex-wrap: wrap;
+}
+.hyper { /* Pour que les liens hypertexte ne soient pas pas souligner et qu'ils aient une couleur précise */
+	text-decoration: none;
+	color: rgb(129, 101, 40)
+}
+
+footer { /* couleur du bas */
+	background-color: black;
+	
+}
+nav {
+	color: var(--violet);
+}
+footer p {
+	cursor: pointer;
+	color: #ccc;
+}
+footer p:hover {
+	color: white;
+}
+button.prg a{ /* pour les boutons 1er et terminale */
+	color: var(--white);
+	text-decoration: none;
+}
+ul li{ /* pour les liste */
+	padding: 20;
+	font-size: 25;
+}
+html,body{ /* pour qu'on ne puisse plus scroll vers le côté */
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+
+table, th, td { /* pour le tableau les ligne et les colonne */
+    border: 2px solid skyblue;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 50px;
+}
+th {
+    background-color: blue;
+}
+td {
+    background-color: grey;
+}
+table{
+	position: relative;
+	left: 380;
+}
+
+
+@media screen and (max-width: 640px) {
+	nav .right p {
+		display: none;
+	}
+
+	.presentation .product-presentation h1 {
+		font-size: 2em;
+	}
+	.presentation .image-presentation {
+		display: none;
+	}
+	.first .product-presentation .small-images .small img {
+		width: 90px;
+	}
+
+	footer {
+		justify-content: flex-start;
+	}
+	footer .column {
+		width: 80%;
+	}
+}
+
+
